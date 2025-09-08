@@ -68,8 +68,8 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 
 Para dúvidas ou sugestões, entre em contato:
 
-- Email: seu-email@exemplo.com  
-- GitHub: [seu-usuario](https://github.com/seu-usuario)
+- Email: jeftigik@hotmail.com  
+- GitHub: [jtigik](https://github.com/jtigik/)
 
 ---
 
