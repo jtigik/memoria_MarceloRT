@@ -107,7 +107,7 @@ let cards = [];
         }
 
         function initializeGame() {
-            const numPairs = { 'Iniciante': 4, 'Intermediário':6, 'Profissional': 8, 'Lendário': 12 }[level];
+            const numPairs = { 'Iniciante': 4, 'Intermediario':6, 'Profissional': 8, 'Lendario': 12 }[level];
             totalPairs = numPairs;
             moves = 0;
             matchedPairs = 0;
@@ -156,7 +156,7 @@ let cards = [];
             if (totalCards <= 8) {
                 cols = 4;  // 4 colunas para até 8 cartas
             } else {
-                cols = 4;  // 6 colunas para até 12 cartas
+                cols = 4;  // 4 colunas para até 24 cartas
             }
             // Aplica o grid-template-columns com número par de colunas
             board.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
