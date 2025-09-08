@@ -29,6 +29,7 @@
                 <div>Tempo: <span id="time-span">00:00</span></div>
                 <div>Pares: <span id="pairs-span">0/0</span></div>
                 <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded font-bold" onclick="restartGame()">Reiniciar</button>
+                <button class="bg-gray-500 hover:bg-gray-600 px-4 py-2 rounded font-bold" onclick="goToMenu()">Voltar ao Menu</button>
             </div>
         </header>
         <div id="board" class="grid gap-4 p-8" style="grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); max-width: 800px;"></div>
@@ -139,6 +140,13 @@
                 alt: "Desenho adoravel de um panda gigante comendo bambu, pelagem branca e preta, olhos grandes e expressao pacifica"
             }
         };
+
+        function goToMenu() {
+            clearInterval(timerInterval);  // Para o cronômetro
+            restartGame();  // Reinicia o jogo para limpar o estado
+            document.getElementById('game').style.display = 'none';
+            document.getElementById('menu').style.display = 'flex';
+        }
 
         function startGame(selectedLevel) {
             level = selectedLevel;
