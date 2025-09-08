@@ -1,4 +1,4 @@
-```markdown
+
 # Jogo da Memória - Versão Web
 
 Este é um jogo da memória desenvolvido para rodar no navegador web, inspirado em uma versão original feita em Python com Tkinter. O objetivo do jogo é encontrar pares de cartas que combinam imagens e palavras correspondentes.
