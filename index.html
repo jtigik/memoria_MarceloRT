@@ -5,67 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jogo da Memória - Versão Web</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* CSS personalizado para flip das cartas */
-        .card {
-            perspective: 1000px;
-            width: 120px;
-            height: 120px;
-        }
-        .card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-        .card.flipped .card-inner {
-            transform: rotateY(180deg);
-        }
-        .card-face {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-        .card-front {
-            background-color: #3498db;
-        }
-        .card-back {
-            transform: rotateY(180deg);
-            background-color: #ecf0f1;
-        }
-        .matched .card-inner {
-            transform: rotateY(180deg);
-            pointer-events: none;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 400px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 font-sans">
     <div id="menu" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500">
@@ -120,82 +60,82 @@
         let wordsImages = {
             "Gato": {
                 word: "Gato",
-                imgSrc: "../images/business-cat.png",
+                imgSrc: "./images/business-cat.png",
                 alt: "Ilustracao realista de um gato preto com olhos amarelos e terno de negocios, parado confiantemente como um executivo felino"
             },
             "Cachorro": {
                 word: "Cachorro",
-                imgSrc: "../images/happy-dog.png",
+                imgSrc: "./images/happy-dog.png",
                 alt: "Imagem cartoon de um cachorro feliz com lingua para fora, rabo abanando e expressao facial amigavel em um campo gramado"
             },
             "Passaro": {
                 word: "Passaro",
-                imgSrc: "../images/bird-amazonian.png",
+                imgSrc: "./images/bird-amazonian.png",
                 alt: "Representacao artistica de um passaro amazonico colorido com asas abertas, plumas vibrantes em tons de verde e azul, voando sobre a selva"
             },
             "Peixe": {
                 word: "Peixe",
-                imgSrc: "../images/Koi-Fish.png",
+                imgSrc: "./images/Koi-Fish.png",
                 alt: "Ilustracao subaquatica de um peixe koi dourado nadando graciosamente em um rio limpido com folhas caidas e fundo de pedra"
             },
             "Leao": {
                 word: "Leao",
-                imgSrc: "../images/lion-head.png",
+                imgSrc: "./images/lion-head.png",
                 alt: "Desenho artistico de uma cabeca de leao majestoso com juba espessa e olhos ferozes, em tons de bege e ouro contra fundo savana"
             },
             "Tigre": {
                 word: "Tigre",
-                imgSrc: "../images/tiger-face.png",
+                imgSrc: "./images/tiger-face.png",
                 alt: "Retrato realista de um rosto de tigre listrado com pelagem laranja e preta, bigodes proeminentes e expressao deIntensity"
             },
             "Elefante": {
                 word: "Elefante",
-                imgSrc: "../images/elephant-icon.png",
+                imgSrc: "./images/elephant-icon.png",
                 alt: "Ilustracao em aquarela de um elefante africano com tromba erguida, presas grandes e pele rugosa em tons de cinza, em um ambiente natural"
             },
             "Urso": {
                 word: "Urso",
-                imgSrc: "../images/angry-bear-head.png",
+                imgSrc: "./images/angry-bear-head.png",
                 alt: "Ilustracao cartoon de uma cabeca de urso zangado com presas a mostra, olhos vermelhos e expressao feroz sob pelagem marrom"
             },
             "Cavalo": {
                 word: "Cavalo",
-                imgSrc: "../images/horse.png",
+                imgSrc: "./images/horse.png",
                 alt: "Representacao realista de um cavalo branco galopando em campo aberto, crina e cauda esvoacando ao vento com pressao dourada"
             },
             "Coelho": {
                 word: "Coelho",
-                imgSrc: "../images/rabbit.png",
+                imgSrc: "./images/rabbit.png",
                 alt: "Desenho cute de um coelho branco com orelhas longas, sentado ereto com olhos grandes e um balao de pensamento com cenoura"
             },
             "Macaco": {
                 word: "Macaco",
-                imgSrc: "../images/monkey.png",
+                imgSrc: "./images/monkey.png",
                 alt: "Ilustracao humoristica de um macaco sorridente com gravata, segurando uma banana, expressao inteligente e malandra"
             },
             "Girafa": {
                 word: "Girafa",
-                imgSrc: "../images/giraffe.png",
+                imgSrc: "./images/giraffe.png",
                 alt: "Imagem perfil de uma girafa elegante com pescoço longo, Pinturas pretas e marrons suaves, pastando na savana africana"
             },
             "Zebra": {
                 word: "Zebra",
-                imgSrc: "../images/zebra.png",
+                imgSrc: "./images/zebra.png",
                 alt: "Vista lateral de uma zebra com listras pretas e brancas nitidas, galopando em campo gramado com caminho de terra ao fundo"
             },
             "Rinoceronte": {
                 word: "Rinoceronte",
-                imgSrc: "../images/rhino.png",
+                imgSrc: "./images/rhino.png",
                 alt: "Ilustracao detalhada de um rinoceronte cinza com chifre grande, pele rugosa e expressao serena em ambiente selvagem"
             },
             "Hipopotamo": {
                 word: "Hipopotamo",
-                imgSrc: "../images/hippo.png",
+                imgSrc: "./images/hippo.png",
                 alt: "Representacao subaquatica de um hipopotamo emergindo da agua, boca aberta mostrando dentes, pele rosa e musculos definidos"
             },
             "Panda": {
                 word: "Panda",
-                imgSrc: "../images/panda.png",
+                imgSrc: "./images/panda.png",
                 alt: "Desenho adoravel de um panda gigante comendo bambu, pelagem branca e preta, olhos grandes e expressao pacifica"
             }
         };
@@ -236,7 +176,7 @@
         //         cardDiv.innerHTML = `
         //             <div class="card-inner">
         //                 <div class="card-face card-front">
-        //                     <img src="../images/memory_icon.png" alt="Desenho de verso de carta com marca de interrogacao central em circulo azul escuro" class="w-20 h-20">
+        //                     <img src="./images/memory_icon.png" alt="Desenho de verso de carta com marca de interrogacao central em circulo azul escuro" class="w-20 h-20">
         //                 </div>
         //                 <div class="card-face card-back">
         //                     <img src="${cardData.imgSrc}" alt="${cardData.alt}" class="w-20 h-20 mb-2">
@@ -268,7 +208,7 @@
                 cardDiv.innerHTML = `
                     <div class="card-inner">
                         <div class="card-face card-front">
-                            <img src="../images/memory_icon.png" alt="Desenho de verso de carta com marca de interrogacao central em circulo azul escuro" class="w-20 h-20">
+                            <img src="./images/memory_icon.png" alt="Desenho de verso de carta com marca de interrogacao central em circulo azul escuro" class="w-20 h-20">
                         </div>
                         <div class="card-face card-back">
                             <img src="${cardData.imgSrc}" alt="${cardData.alt}" class="w-20 h-20 mb-2">
