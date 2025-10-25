@@ -39,11 +39,6 @@ let cards = [];
                 imgSrc: "./images/Dishes Images/Moqueca.jpg",
                 alt: "Imagem de um prato típico brasileiro chamado Moqueca, que consiste em um ensopado de peixe com leite de coco, azeite de dendê, pimentões e temperos, servido em uma panela de barro com arroz branco ao lado"
             },
-            "Elefante": {
-                word: "Elefante",
-                imgSrc: "./images/Dishes Images/elephant-icon.png",
-                alt: "Ilustracao em aquarela de um elefante africano com tromba erguida, presas grandes e pele rugosa em tons de cinza, em um ambiente natural"
-            },
             "OssoBuco": {
                 word: "Ossobuco",
                 imgSrc: "./images/Dishes Images/OssoBuco.jpg",
