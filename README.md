@@ -68,7 +68,8 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 
 Para dúvidas ou sugestões, entre em contato:
 
-- Email: jeftigik@hotmail.com  
+- jeftigik@hotmail.com - Jeferson Tigik
+- m.ramos.tigik@icloud.com - Marcelo Ramos Tigik
 - GitHub: [jtigik](https://github.com/jtigik/)
 
 ---
