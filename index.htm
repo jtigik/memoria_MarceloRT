@@ -1,0 +1,53 @@
+<!DOCTYPE html5>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogo da Memória - Versão Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./images/memory_icon.png" type="images/png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div id="menu" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500">
+        <div class="bg-white rounded-lg shadow-lg p-10 max-w-md">
+            <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Jogo da Memória</h1>
+            <p class="text-center mb-6 text-gray-600">Encontre os pares de imagens com suas palavras correspondentes!<br><br>Escolha o nível de dificuldade:</p>
+            <div class="space-y-4">
+                <button class="w-full py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded" onclick="startGame('Iniciante')">Iniciante<br><small>4 pares - Fácil</small></button>
+                <button class="w-full py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-bold rounded" onclick="startGame('Intermediario')">Intermediário<br><small>6 pares - Médio</small></button>
+                <button class="w-full py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded" onclick="startGame('Profissional')">Profissional<br><small>8 pares - Difícil</small></button>
+                <button class="w-full py-3 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded" onclick="startGame('Lendario')">Lendário<br><small>12 pares - Extremo</small></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game" class="min-h-screen bg-gray-200 flex flex-col items-center justify-start" style="display: none;">
+        <header class="w-full bg-blue-600 text-white p-4 shadow-md">
+            <div class="flex justify-between items-center max-w-4xl mx-auto">
+                <div>Nível: <span id="level-span">Iniciante</span></div>
+                <div>Movimentos: <span id="moves-span">0</span></div>
+                <div>Tempo: <span id="time-span">00:00</span></div>
+                <div>Pares: <span id="pairs-span">0/0</span></div>
+                <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded font-bold" onclick="restartGame()">Reiniciar</button>
+                <button class="bg-gray-500 hover:bg-gray-600 px-4 py-2 rounded font-bold" onclick="goToMenu()">Voltar ao Menu</button>
+            </div>
+        </header>
+        <div id="board" class="grid gap-4 p-8" style="grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); max-width: 800px;"></div>
+    </div>
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-2xl font-bold mb-4">Parabéns! Voce completou o jogo!</h2>
+            <p id="stats-text"></p>
+            <button class="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+    <footer>
+    <div class="w-full bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2025 Jogo da Memória - <i>By Marcelo Ramos Tigik</i> - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
