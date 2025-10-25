@@ -9,85 +9,70 @@ let cards = [];
         let timerInterval = null;
         let level = '';
         let wordsImages = {
-            "Gato": {
-                word: "Gato",
-                imgSrc: "./images/business-cat.png",
-                alt: "Ilustracao realista de um gato preto com olhos amarelos e terno de negocios, parado confiantemente como um executivo felino"
+            "CuecaVirada": {
+                word: "Cueca Virada",
+                imgSrc: "./images/Dishes Images/CuecaVirada.jpg",
+                alt: "Cueca Virada é um doce frito tradicional da culinária mineira, especialmente popular em festas juninas, quermesses e feiras de rua em Minas Gerais. Consiste em uma massa doce frite de cor dourada intensa e formato irregular, torcido ou dobrado."
             },
-            "Cachorro": {
-                word: "Cachorro",
-                imgSrc: "./images/happy-dog.png",
-                alt: "Imagem cartoon de um cachorro feliz com lingua para fora, rabo abanando e expressao facial amigavel em um campo gramado"
+            "ALaMinuta": {
+                word: "A la minuta",
+                imgSrc: "./images/Dishes Images/ArrozFeijaoBatataBife.jpg",
+                alt: "Imagem de um prato chamado 'A la minuta', que apresenta um bife grelhado acompanhado de arroz branco, feijão preto e batatas fritas, servido em um prato branco sobre uma mesa"
             },
-            "Passaro": {
-                word: "Passaro",
-                imgSrc: "./images/bird-amazonian.png",
-                alt: "Representacao artistica de um passaro amazonico colorido com asas abertas, plumas vibrantes em tons de verde e azul, voando sobre a selva"
+            "Costelao": {
+                word: "Costelão",
+                imgSrc: "./images/Dishes Images/Costelao.jpg",
+                alt: "Foto de um prato suculento chamado Costelão, que apresenta uma costela bovina assada com temperos, acompanhada de farofa, vinagrete e mandioca frita, servida em um prato rústico sobre uma mesa de madeira"
             },
-            "Peixe": {
-                word: "Peixe",
-                imgSrc: "./images/Koi-Fish.png",
-                alt: "Ilustracao subaquatica de um peixe koi dourado nadando graciosamente em um rio limpido com folhas caidas e fundo de pedra"
+            "Feijoada": {
+                word: "Feijoada",
+                imgSrc: "./images/Dishes Images/Feijoada.jpg",
+                alt: "Imagem de um prato tradicional brasileiro chamado Feijoada, que consiste em um guisado de feijão preto com carnes variadas, servido com arroz branco, couve refogada, laranja fatiada e farofa em um prato branco"
             },
-            "Leao": {
-                word: "Leao",
-                imgSrc: "./images/lion-head.png",
-                alt: "Desenho artistico de uma cabeca de leao majestoso com juba espessa e olhos ferozes, em tons de bege e ouro contra fundo savana"
+            "MacarraoMolhoCarne": {
+                word: "Macarrão com Molho de Carne",
+                imgSrc: "./images/Dishes Images/MacarraoMolhoCarne.jpg",
+                alt: "Foto de um prato de macarrão com molho de carne, apresentando espaguete coberto por um molho vermelho com pedaços de carne moída, servido em um prato branco sobre uma mesa"
             },
-            "Tigre": {
-                word: "Tigre",
-                imgSrc: "./images/tiger-face.png",
-                alt: "Retrato realista de um rosto de tigre listrado com pelagem laranja e preta, bigodes proeminentes e expressao deIntensity"
+            "Moqueca": {
+                word: "Moqueca",
+                imgSrc: "./images/Dishes Images/Moqueca.jpg",
+                alt: "Imagem de um prato típico brasileiro chamado Moqueca, que consiste em um ensopado de peixe com leite de coco, azeite de dendê, pimentões e temperos, servido em uma panela de barro com arroz branco ao lado"
             },
             "Elefante": {
                 word: "Elefante",
-                imgSrc: "./images/elephant-icon.png",
+                imgSrc: "./images/Dishes Images/elephant-icon.png",
                 alt: "Ilustracao em aquarela de um elefante africano com tromba erguida, presas grandes e pele rugosa em tons de cinza, em um ambiente natural"
             },
-            "Urso": {
-                word: "Urso",
-                imgSrc: "./images/angry-bear-head.png",
-                alt: "Ilustracao cartoon de uma cabeca de urso zangado com presas a mostra, olhos vermelhos e expressao feroz sob pelagem marrom"
+            "OssoBuco": {
+                word: "Ossobuco",
+                imgSrc: "./images/Dishes Images/OssoBuco.jpg",
+                alt: "Foto de um prato italiano chamado Ossobuco, que apresenta um corte de carne bovina com osso, cozido lentamente em um molho saboroso, servido com purê de batatas e legumes em um prato branco"
             },
-            "Cavalo": {
-                word: "Cavalo",
-                imgSrc: "./images/horse.png",
+            "Pamonha": {
+                word: "Pamonha",
+                imgSrc: "./images/Dishes Images/Pamonha.jpg",
                 alt: "Representacao realista de um cavalo branco galopando em campo aberto, crina e cauda esvoacando ao vento com pressao dourada"
             },
-            "Coelho": {
-                word: "Coelho",
-                imgSrc: "./images/rabbit.png",
-                alt: "Desenho cute de um coelho branco com orelhas longas, sentado ereto com olhos grandes e um balao de pensamento com cenoura"
+            "PaoDeQueijo": {
+                word: "Pão de Queijo",
+                imgSrc: "./images/Dishes Images/PaoDeQueijo.jpg",
+                alt: "Imagem de pães de queijo fresquinhos, pequenos e redondos, com casca dourada e interior macio, servidos em um prato branco sobre uma mesa"
             },
-            "Macaco": {
-                word: "Macaco",
-                imgSrc: "./images/monkey.png",
-                alt: "Ilustracao humoristica de um macaco sorridente com gravata, segurando uma banana, expressao inteligente e malandra"
+            "Pinhao": {
+                word: "Pinhão",
+                imgSrc: "./images/Dishes Images/Pinhao.jpg",
+                alt: "Foto de pinhões cozidos, que são sementes de araucária, com casca marrom brilhante e interior macio, servidos em um prato branco sobre uma mesa rústica"
             },
-            "Girafa": {
-                word: "Girafa",
-                imgSrc: "./images/giraffe.png",
-                alt: "Imagem perfil de uma girafa elegante com pescoço longo, Pinturas pretas e marrons suaves, pastando na savana africana"
+            "Polenta": {
+                word: "Polenta",
+                imgSrc: "./images/Dishes Images/Polenta.jpg",
+                alt: "Imagem de um prato de polenta cremosa, feita com fubá de milho, servida em um prato branco e acompanhada de molho de tomate e queijo ralado"
             },
-            "Zebra": {
-                word: "Zebra",
-                imgSrc: "./images/zebra.png",
-                alt: "Vista lateral de uma zebra com listras pretas e brancas nitidas, galopando em campo gramado com caminho de terra ao fundo"
-            },
-            "Rinoceronte": {
-                word: "Rinoceronte",
-                imgSrc: "./images/rhino.png",
-                alt: "Ilustracao detalhada de um rinoceronte cinza com chifre grande, pele rugosa e expressao serena em ambiente selvagem"
-            },
-            "Hipopotamo": {
-                word: "Hipopotamo",
-                imgSrc: "./images/hippo.png",
-                alt: "Representacao subaquatica de um hipopotamo emergindo da agua, boca aberta mostrando dentes, pele rosa e musculos definidos"
-            },
-            "Panda": {
-                word: "Panda",
-                imgSrc: "./images/panda.png",
-                alt: "Desenho adoravel de um panda gigante comendo bambu, pelagem branca e preta, olhos grandes e expressao pacifica"
+            "Pudim": {
+                word: "Pudim",
+                imgSrc: "./images/Dishes Images/Pudim.jpg",
+                alt: "Foto de um pudim de leite condensado, com textura lisa e brilhante, coberto com calda de caramelo, servido em um prato branco"
             }
         };
 
