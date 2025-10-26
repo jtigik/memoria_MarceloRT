@@ -1,3 +1,4 @@
+@import "tailwindcss";
 /* CSS personalizado para flip das cartas */
 .card {
     perspective: 1000px;

@@ -1,0 +1,20 @@
+{
+  "name": "memoria_marcelort",
+  "version": "1.0.0",
+  "description": "Este é um jogo da memória desenvolvido para rodar no navegador web, inspirado em uma versão original feita em Python com Tkinter. O objetivo do jogo é encontrar pares de cartas que combinam imagens e palavras correspondentes.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtigik/memoria_MarceloRT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtigik/memoria_MarceloRT/issues"
+  },
+  "homepage": "https://github.com/jtigik/memoria_MarceloRT#readme"
+}
