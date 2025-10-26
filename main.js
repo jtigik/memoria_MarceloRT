@@ -10,7 +10,7 @@ let cards = [];
         let level = '';
         let wordsImages = {
             "CuecaVirada": {
-                word: "Cueca Virada",
+                word: "CuecaVirada",
                 imgSrc: "./images/Dishes Images/CuecaVirada.jpg",
                 alt: "Cueca Virada é um doce frito tradicional da culinária mineira, especialmente popular em festas juninas, quermesses e feiras de rua em Minas Gerais. Consiste em uma massa doce frite de cor dourada intensa e formato irregular, torcido ou dobrado."
             },
