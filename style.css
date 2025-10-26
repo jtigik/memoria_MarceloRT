@@ -64,6 +64,10 @@
         width: 90px;
         height: 90px;
     }
+
+    .card > text-sm font-bold {
+        font-size: 0.6rex; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
     #board {
         grid-template-columns: repeat(2, 1fr) !important; /* Força 2 colunas */
     }

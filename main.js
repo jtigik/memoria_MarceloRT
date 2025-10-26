@@ -15,7 +15,7 @@ let cards = [];
                 alt: "Cueca Virada é um doce frito tradicional da culinária mineira, especialmente popular em festas juninas, quermesses e feiras de rua em Minas Gerais. Consiste em uma massa doce frite de cor dourada intensa e formato irregular, torcido ou dobrado."
             },
             "ALaMinuta": {
-                word: "A la minuta",
+                word: "A La minuta",
                 imgSrc: "./images/Dishes Images/ArrozFeijaoBatataBife.jpg",
                 alt: "Imagem de um prato chamado 'A la minuta', que apresenta um bife grelhado acompanhado de arroz branco, feijão preto e batatas fritas, servido em um prato branco sobre uma mesa"
             },
@@ -30,8 +30,8 @@ let cards = [];
                 alt: "Imagem de um prato tradicional brasileiro chamado Feijoada, que consiste em um guisado de feijão preto com carnes variadas, servido com arroz branco, couve refogada, laranja fatiada e farofa em um prato branco"
             },
             "MacarraoMolhoCarne": {
-                word: "Macarrão com Molho de Carne",
-                imgSrc: "./images/Dishes Images/MacarraoMolhoCarne.jpg",
+                word: "Macarrão",
+                imgSrc: "./images/Dishes Images/Copy-MacarraoMolhoCarne.jpg",
                 alt: "Foto de um prato de macarrão com molho de carne, apresentando espaguete coberto por um molho vermelho com pedaços de carne moída, servido em um prato branco sobre uma mesa"
             },
             "Moqueca": {
@@ -149,7 +149,7 @@ let cards = [];
                             <img src="./images/memory_icon.png" alt="Desenho de verso de carta com marca de interrogacao central em circulo azul escuro" class="w-20 h-20">
                         </div>
                         <div class="card-face card-back">
-                            <img src="${cardData.imgSrc}" alt="${cardData.alt}" class="w-20 h-20 mb-2">
+                            <img src="${cardData.imgSrc}" alt="${cardData.alt}" class="w-20 h-20">
                             <span class="text-sm font-bold">${cardData.word}</span>
                         </div>
                     </div>
