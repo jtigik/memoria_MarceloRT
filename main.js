@@ -31,7 +31,7 @@ let cards = [];
             },
             "MacarraoMolhoCarne": {
                 word: "Macarrão",
-                imgSrc: "./images/Dishes Images/Copy-MacarraoMolhoCarne.jpg",
+                imgSrc: "./images/Dishes Images/MacarraoMolhoCarne.jpg",
                 alt: "Foto de um prato de macarrão com molho de carne, apresentando espaguete coberto por um molho vermelho com pedaços de carne moída, servido em um prato branco sobre uma mesa"
             },
             "Moqueca": {
